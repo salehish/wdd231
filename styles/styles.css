@@ -25,7 +25,8 @@ header nav ul li {
   column-gap: 1px;
   grid-template-columns: auto;
   color: white;
-  display: flex;
+  display: contents;
+  align-items: center;
 }
 
 header nav ul li a {
@@ -33,7 +34,6 @@ header nav ul li a {
   text-decoration: none;
   padding: 10px;
   font-size: 18px;
-  grid-template-columns: auto;
 }
 
 header nav ul li a.active {

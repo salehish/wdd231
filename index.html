@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the WDD231 Course Home Page"/>
-    <meta name="author" content="Your Name"/>
-    <title>WDD231 Course Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Course Home page For WDD 231">
+    <meta name="author" content="Saleh Ntege">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Course Home Page</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <img src="images/Image 1.jpg" alt="Saleh Ntege's profile picture">
-                    <h1>Saleh Ntege</h1>
-                </li>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="https://www.example.com/chamber">Chamber</a></li>
-                <li><a href="https://github.com/your-github-username" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </nav>
-    </header>
+        <img src="images/Image 1.jpg" alt="A photo of Saleh Ntege" />
+        <span>Saleh Ntege</span>
+    </header>     
+    <nav>
+        <a id="menu" href="javascript:Void(0);" class="hamburger"></a>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+    
+
     <main>
+        <h1>Home</h1>
+        <div id="container">
+            <h1>Course Work</h1> 
+        </div>
+        <section>
+            <p>Official map of Uganda.</p>
+            <img src="images/Flag.png" alt="Uganda's flag">
+        </section>
+
         <section>
             <div class="card1">
-                <h2>Course Work</h2>
-            </div>
-            <div class="section-content">
-                <p>Official Map of Uganda.</p>
-                <img src="images/Flag.png" alt=" Uganda's flag">
-            </div>
-        </section>
-        <section>
-            <div class="card2">
                 <h2>Web and Computer Programming Certificate</h2>
                 <ul>
                     <li><a href="https://www.example.com/chamber">All</a></li>
@@ -43,8 +46,9 @@
                 </ul>
             </div>
         </section>
+
         <section>
-            <div id="card3">
+            <div id="card2">
                 <ul>
                     <li><a href="https://www.example.com/chamber">CSE 110</a></li>
                     <li><a href="https://www.example.com/chamber">WDD 130</a></li>
@@ -55,11 +59,16 @@
                 </ul>
             </div>
         </section>
+        
     </main>
+
     <footer>
-        <p>&copy; <span id="year"></span>2025, Saleh Ntege, Jinja, Uganda</p>
+        <p>&copy; <span id="currentyear"></span> Saleh Ntege, Jinja, Uganda</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/main.js" defer></script>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </body>
 </html>

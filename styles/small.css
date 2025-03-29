@@ -93,7 +93,7 @@ nav ul li a:hover{
     color: white;
 }
 .card1 ul li a:hover{
-    background-color: aqua;
+    background-color: green;
 }
 main {
     padding: 1rem;
@@ -138,3 +138,55 @@ footer {
     background-color: #08004b;
     color: white;
 }
+.hamburger-menu .bar {
+    height: 4px;
+    background-color: rgb(10, 228, 192);
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links ul li {
+    margin: 0 20px;
+  }
+  
+  .nav-links ul li a {
+    color: rgb(162, 42, 209);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      width: 100%;
+      background-color: #333;
+      text-align: center;
+    }
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .nav-links ul li {
+        margin: 10px 0;
+      }
+    
+      .hamburger-menu {
+        display: flex;
+      }
+    
+      .nav-links.active {
+        display:block;
+    }
+    }

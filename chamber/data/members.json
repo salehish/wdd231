@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Salehish beauty parlour and Asp",
+      "address": "Cathedral road, Bugembe",
+      "phone": "256 701 952 380",
+      "website": "http://salehishbeauty.com",
+      "image": "salehish1.jpg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "SSemco Travels",
+      "address": "456 Jinja street",
+      "phone": "256 776 273 813",
+      "website": "http://ssemco.com",
+      "image": "ssemco.jpg",
+      "membershipLevel": 2
+    },
+    {
+      "name": "americanboutique",
+      "address": "789 bugembe street",
+      "phone": "256 702 611 046",
+      "website": "http://americanboutique.com",
+      "image": "boutique1.jpg",
+      "membershipLevel": 3
+    }
+  ]
+  

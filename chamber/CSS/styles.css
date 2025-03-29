@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f6f7f8;
+    color: rgb(2, 37, 153);
+
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  #members-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: rgb(246, 246, 247);
+    padding: 20px;
+  }
+  
+  .member-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    background-color: rgb(1, 1, 133);
+  }
+  
+  .grid-view .member-card {
+    width: 200px;
+    color: #ddd;
+  }
+  
+  .list-view .member-card {
+    width: 100%;
+    color: #f6f7f8;
+  }
+  
+  @media (max-width: 600px) {
+    .member-card {
+      width: 100%;
+    }
+  }
+
+  @media screen {
+    
+  }
+
+
+
+  footer{
+    text-align: center;
+    background-color: rgb(1, 1, 100);
+    color: #ddd;
+  }

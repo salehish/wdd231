@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #dfd2d2;
 }
 
 header {
@@ -33,6 +33,12 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:focus, nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff6f61; 
+}
+
+
 #hero {
     position: relative;
     text-align: center;
@@ -49,7 +55,7 @@ nav ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
-    color: rgb(1, 177, 39);
+    color: hwb(120 98% 1%);
 }
 
 .jtc-button {
@@ -108,6 +114,16 @@ nav ul li a {
     }
 }
  
+.cta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FF6F61;  
+    color: white;
+    padding: 10px 20px;
+  }
+
 footer {
     text-align: center;
     background-color: #003f73;

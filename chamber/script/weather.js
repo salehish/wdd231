@@ -30,4 +30,7 @@ async function fetchWeather() {
     `;
 }
 
+
+
+
 fetchWeather();

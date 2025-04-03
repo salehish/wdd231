@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Application!</h1>
+    </header>
+
+    <main>
+        <h2>Your Membership Application Details</h2>
+        <p><strong>First Name:</strong> </p>
+        <p><strong>Last Name:</strong> </p>
+        <p><strong>Email:</strong> </p>
+        <p><strong>Mobile Number:</strong> </p>
+        <p><strong>Business Name:</strong> </p>
+        <p><strong>Timestamp:</strong> </p>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.body.innerHTML = document.body.innerHTML.replace('<!-- Insert First Name Here -->', urlParams.get('first-name'));
+        document.body.innerHTML = document.body.innerHTML.replace('<!-- Insert Last Name Here -->', urlParams.get('last-name'));
+        document.body.innerHTML = document.body.innerHTML.replace('<!-- Insert Email Here -->', urlParams.get('email'));
+        document.body.innerHTML = document.body.innerHTML.replace('<!-- Insert Mobile Number Here -->', urlParams.get('mobile'));
+        document.body.innerHTML = document.body.innerHTML.replace('<!-- Insert Business Name Here -->', urlParams.get('business-name'));
+        document.body.innerHTML = document.body.innerHTML.replace('<!-- Insert Timestamp Here -->', urlParams.get('timestamp'));
+    </script>
+</body>
+</html>

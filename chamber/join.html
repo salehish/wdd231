@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Join the Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="membership-form">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required title="Your first name" autocomplete="given-name">
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required title="Your last name" autocomplete="family-name">
+
+                <label for="org-title">Organizational Title:</label>
+                <input type="text" id="org-title" name="org-title" required title="Your organizational title" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required title="Your email address" autocomplete="email" placeholder="example@example.com">
+
+                <label for="mobile-phone">Mobile Phone:</label>
+                <input type="tel" id="mobile-phone" name="mobile-phone" required title="Your mobile phone number" autocomplete="tel">
+
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business-name" required title="Business name" autocomplete="organization">
+
+                <label for="membership-level">Membership Level:</label>
+                <select id="membership-level" name="membership-level" required title="Select your membership level">
+                    <option value="NP Membership">NP Membership (Non-Profit)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+
+                <label for="business-desc">Business Description:</label>
+                <textarea id="business-desc" name="business-desc" required title="Describe your business"></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <div id="membership-cards">
+                <div class="card" id="np-membership">
+                    <h3>NP Membership</h3>
+                    <p>No Fee</p>
+                    <a href="#np-modal" data-toggle="modal">Learn More</a>
+                </div>
+                <div class="card" id="bronze-membership">
+                    <h3>Bronze Membership</h3>
+                    <p>$50/year</p>
+                    <a href="#bronze-modal" data-toggle="modal">Learn More</a>
+                </div>
+                <div class="card" id="silver-membership">
+                    <h3>Silver Membership</h3>
+                    <p>$100/year</p>
+                    <a href="#silver-modal" data-toggle="modal">Learn More</a>
+                </div>
+                <div class="card" id="gold-membership">
+                    <h3>Gold Membership</h3>
+                    <p>$200/year</p>
+                    <a href="#gold-modal" data-toggle="modal">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="np-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Free participation in all Chamber events</li>
+                <li>Networking opportunities</li>
+                <li>Event discounts</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="bronze-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>Access to all Chamber events</li>
+                <li>Networking opportunities</li>
+                <li>Event discounts</li>
+                <li>Website listing</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="silver-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Monthly newsletter spotlight</li>
+                <li>Advertising opportunities on the website</li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal" id="gold-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Featured spotlight on the homepage</li>
+                <li>Free participation in special events</li>
+                <li>Exclusive advertising opportunities</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Chamber of Commerce</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+
+    <script src="scripts/forms.js"></script>
+</body>
+</html>

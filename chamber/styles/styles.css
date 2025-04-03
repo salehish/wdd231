@@ -24,30 +24,40 @@ input, select, textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #01488b;
+    background-color: #013f79;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0a8bf5;
+    background-color: #0271cc;
+}
+
+#membership-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#membership-form {
+    flex: 1 1 48%;  
 }
 
 #membership-cards {
+    flex: 1 1 48%; 
     display: flex;
+    flex-direction: column;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
-    animation: fadeIn 2s ease-in-out;
-    text-align: center;
-    margin-top: 30px;
 }
 
 .card {
     background-color: #fff;
     padding: 20px;
-    width: 200px;
+    width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -66,7 +76,6 @@ button:hover {
     text-align: center;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -94,14 +103,7 @@ button:hover {
     cursor: pointer;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+
 
 
 @media (max-width: 600px) {
@@ -111,6 +113,12 @@ button:hover {
         align-items: center;
         height: 100vh;
         margin: 0;
+        flex-direction: column;
+    }
+
+    #membership-section {
+        flex-direction: column;
+        align-items: center;
     }
 
     form {
@@ -128,8 +136,7 @@ button:hover {
 
     .card {
         width: 100%;
-        max-width: 300px; 
-        margin: 0 auto;
+        max-width: 300px;
     }
 
     .modal-content {
@@ -146,23 +153,24 @@ button:hover {
         margin: 0;
     }
 
-    form {
-        width: 80%;
+    #membership-section {
+        flex-direction: row;
+    }
+
+    #membership-form {
+        flex: 1;
     }
 
     #membership-cards {
-        flex-direction: row;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
-        justify-content: space-around;
-        align-items: flex-start;
     }
 
     .card {
-        width: 220px;
-        margin: 0; 
-    }
-
-    .modal-content {
-        width: 400px;
+        width: 100%;
+        max-width: 350px;  
+        margin: 0 auto;
     }
 }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kampala Chamber Directory</title>
+    <meta name="description" content="Directory page for Kampala Chamber of Commerce members." />
+    <meta name="author" content="Saleh Ntege" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Kampala Chamber Directory" />
+    <meta property="og:description" content="Explore local businesses and chamber members." />
+    <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <script defer src="js/directory.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.png" alt="" />
+            <h1>Kampala Chamber Directory</h1>
+        </div>
+
+        <nav>
+
+            <!-- theme toggle(Half black/white circle) -->
+            <div class="theme-toggle"></div>
+
+            <!-- Hamburger icon -->
+            <div class="menu-icon">&#9776;</div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Kampala Chamber Hero Image">
+
+        <div class="hero-text">
+            <h2>Home</h2>
+        </div>
+    </section>
+
+    <!-- ADD THIS SECTION -->
+    <section class="info-cards">
+
+        <!-- EVENTS -->
+        <div class="info-box">
+            <div class="box-title">Events</div>
+            <div class="box-content">
+                <p>No upcoming events at the moment.</p>
+            </div>
+        </div>
+
+        <!-- CURRENT WEATHER -->
+        <div class="info-box">
+            <div class="box-title">Current Weather</div>
+            <div class="box-content weather-content">
+                <!-- Weather Icon -->
+                <div class="weather-icon">⛅</div>
+
+                <!-- Weather Details -->
+                <div class="weather-details">
+                    <p>75°F - Partly Cloudy</p>
+                    <p>High: 85° | Low: 52°</p>
+                    <p>Humidity: 34%</p>
+                    <p>Sunrise: 7:30 AM</p>
+                    <p>Sunset: 9:59 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- WEATHER FORECAST -->
+        <div class="info-box">
+            <div class="box-title">Weather Forecast</div>
+            <div class="box-content forecast-content">
+                <p>Today: 90°F</p>
+                <p>Wednesday: 89°F</p>
+                <p>Thursday: 68°F</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- EXISTING BUTTONS -->
+    <div class="view-toggle">
+        <button id="gridBtn">Grid View</button>
+        <button id="listBtn">List View</button>
+    </div>
+
+    <main>
+        <section id="members-container" class="grid"></section>
+    </main>
+
+    <footer>
+    <div class="footer-top">
+        <!-- Left: Contact info -->
+        <div class="footer-left">
+            <p>Kampala Chamber of Commerce</p>
+            <p>Plot 12, Kampala Road, Kampala, Uganda</p>
+            <p>Email: info@kampalachamber.ug</p>
+            <p>Phone: +256 700 000 000</p>
+        </div>
+
+        <!-- Center: Social icons -->
+        <div class="footer-center">
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" /></a>
+            <a href="https://x.com" target="_blank"><img src="images/x.png" alt="X / Twitter" /></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        </div>
+
+        <!-- Right: Project info -->
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Saleh Ntege</p>
+            <p>@ 2026  Kampala Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+
+</html>

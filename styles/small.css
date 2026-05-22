@@ -131,6 +131,14 @@ nav ul li {
     width: 100%;
 }
 
+#nav {
+    display: none;
+}
+
+#nav.open {
+    display: block;
+}
+
 .site-name {
     display: flex;
     justify-content: space-between;
@@ -141,7 +149,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+
 
 }
 

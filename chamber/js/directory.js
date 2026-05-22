@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-function displayMembers(members) {
-    container.innerHTML = "";
+    function displayMembers(members) {
+        container.innerHTML = "";
 
-    members.forEach(member => {
-        const card = document.createElement("div");
-        card.classList.add(`membership-${member.membership}`, "member-card");
+        members.forEach(member => {
+            const card = document.createElement("div");
+            card.classList.add(`membership-${member.membership}`, "member-card");
 
-        card.innerHTML = `
+            card.innerHTML = `
             <!-- Name + Tagline -->
             <div class="member-header">
                 <h3>${member.name}</h3>
@@ -42,9 +42,10 @@ function displayMembers(members) {
             </div>
         `;
 
-        container.appendChild(card);
-    });
-}
+            container.appendChild(card);
+        });
+
+    }
 
 
     // Toggle Views
@@ -58,22 +59,28 @@ function displayMembers(members) {
         container.classList.remove("grid");
     });
 
-    
+
     // Footer date and time 
 
-const rawLastModified = document.lastModified;
+    const rawLastModified = document.lastModified;
 
-if (rawLastModified) {
-    const lastModDate = new Date(rawLastModified);
+    if (rawLastModified) {
+        const lastModDate = new Date(rawLastModified);
 
-    document.querySelector("#lastModified").textContent =
-        lastModDate.toLocaleString();
-} else {
-    document.querySelector("#lastModified").textContent =
-        "Not available";
-}
+        document.querySelector("#lastModified").textContent =
+            lastModDate.toLocaleString();
+    } else {
+        document.querySelector("#lastModified").textContent =
+            "Not available";
+    }
+
+    const menuIcon = document.querySelector(".menu-icon");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+    });
 
 
-
-getMembers();
+    getMembers();
 });

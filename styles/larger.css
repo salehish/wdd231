@@ -4,11 +4,12 @@
         width: 100%;
     }
 
-nav {
+    nav {
         width: 100%;
         background-color: #02013d;
     }
- nav ul {
+
+    nav ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -18,11 +19,12 @@ nav {
         padding: 0;
         list-style: none;
     }
-nav ul li {
+
+    nav ul li {
         flex: 0;
     }
 
-nav ul li a {
+    nav ul li a {
         display: block;
         padding: 15px 25px;
         color: white;
@@ -32,11 +34,16 @@ nav ul li a {
         border-radius: 0;
     }
 
-nav ul li a:hover {
+    nav ul li a:hover {
         background-color: #039759;
     }
 
-.site-name,main {
+    #nav {
+        display: block;
+    }
+
+    .site-name,
+    main {
         width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -46,7 +53,7 @@ nav ul li a:hover {
     }
 
 
-main h1 {
+    main h1 {
         color: #0e0155;
         text-align: left;
         padding: 20px;
@@ -56,7 +63,7 @@ main h1 {
 
     }
 
-#menu {
+    #menu {
         display: none;
     }
 
@@ -87,7 +94,8 @@ main h1 {
         min-height: 300px;
     }
 
-.about-title h2,.about-photo h3 {
+    .about-title h2,
+    .about-photo h3 {
         width: 100%;
         background-color: #0e0155;
         color: white;
@@ -95,7 +103,8 @@ main h1 {
         margin: 0;
         box-sizing: border-box;
     }
-.about-photo {
+
+    .about-photo {
         flex: 1;
         text-align: center;
         background-color: white;
@@ -103,13 +112,13 @@ main h1 {
 
     }
 
-.about-photo img {
+    .about-photo img {
         width: 100%;
         max-width: 300px;
         border-radius: 10px;
     }
 
-.filters {
+    .filters {
         display: flex;
         justify-content: center;
         gap: 1rem;
@@ -117,7 +126,7 @@ main h1 {
         flex-wrap: wrap;
     }
 
-.filters button {
+    .filters button {
         width: 140px;
         height: 50px;
         display: flex;
@@ -129,17 +138,17 @@ main h1 {
         border-radius: 5px;
     }
 
-#menu {
+    #menu {
         display: none;
     }
 
-main section:nth-of-type(4) {
+    main section:nth-of-type(4) {
         display: flex;
         justify-content: center;
         gap: 1rem;
     }
 
-main section:nth-of-type(4) img {
+    main section:nth-of-type(4) img {
         width: 120px;
         height: 120px;
         border-radius: 50%;
@@ -147,7 +156,7 @@ main section:nth-of-type(4) img {
     }
 
 
-section:last-of-type {
+    section:last-of-type {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -156,12 +165,12 @@ section:last-of-type {
         flex-wrap: nowrap;
     }
 
-section:last-of-type img {
+    section:last-of-type img {
         width: 100px;
         height: 100px;
     }
 
-#course-grid {
+    #course-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
@@ -169,13 +178,13 @@ section:last-of-type img {
     }
 
 
-.col {
+    .col {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
 
-.filters {
+    .filters {
         justify-content: center;
         align-items: center;
         display: grid;
@@ -185,18 +194,18 @@ section:last-of-type img {
         gap: 1rem;
     }
 
-.filters button {
+    .filters button {
         width: 100%;
     }
 
-#courses {
+    #courses {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
 
 
-#courses div {
+    #courses div {
         width: 100%;
         padding: 1rem;
         text-align: center;
@@ -206,7 +215,7 @@ section:last-of-type img {
         box-sizing: border-box;
     }
 
-#credits {
+    #credits {
         display: block;
     }
 }

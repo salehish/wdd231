@@ -139,6 +139,12 @@ nav ul li {
     display: block;
 }
 
+nav ul li a.active {
+    background-color: #039759;
+    color: white;
+    font-weight: bold;
+}
+
 .site-name {
     display: flex;
     justify-content: space-between;

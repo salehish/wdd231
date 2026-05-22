@@ -42,6 +42,13 @@
         display: block;
     }
 
+    nav ul li a.active {
+    background-color: #039759;
+    color: white;
+    font-weight: bold;
+}
+
+
     .site-name,
     main {
         width: 100%;

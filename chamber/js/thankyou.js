@@ -20,5 +20,3 @@ if (results) {
 
 document.querySelector("#lastModified").textContent =
     new Date(document.lastModified).toLocaleString();
-console.log("Current time:", new Date().toLocaleString());
-console.log("Last modified:", new Date(document.lastModified).toLocaleString());

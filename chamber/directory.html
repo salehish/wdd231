@@ -10,21 +10,17 @@
     <meta name="description" content="Directory page for Kampala Chamber of Commerce members.">
     <meta name="author" content="Saleh Ntege">
 
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Kampala Chamber Directory">
     <meta property="og:description" content="Explore local businesses and chamber members.">
     <meta property="og:image" content="images/og-image.jpg">
     <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/directory.html">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/large.css">
 
-    <!-- JS -->
     <script defer src="js/directory.js"></script>
 </head>
 
@@ -33,7 +29,7 @@
     <header>
 
         <div class="logo-title">
-            <img src="images/logo.png" alt="Kampala Chamber Logo">
+            <img src="images/logo.png" alt="Kampala Chamber Logo" loading="lazy">
             <h1>Kampala Chamber Directory</h1>
         </div>
 
@@ -41,17 +37,11 @@
 
             <div class="theme-toggle"></div>
 
-            <!-- Accessible Menu Button -->
-            <button class="menu-icon" aria-label="Open navigation menu">
-                &#9776;
-            </button>
+            <button class="menu-icon" aria-label="Open navigation menu">&#9776;</button>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-
-                <!-- Active page -->
                 <li><a href="directory.html" class="active">Directory</a></li>
-
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
@@ -61,19 +51,17 @@
     </header>
 
     <section class="hero">
-        <img src="images/hero.jpg" alt="Kampala city businesses">
+        <img src="images/hero.jpg" alt="Kampala city businesses" loading="lazy">
 
         <div class="hero-text">
             <h2>Directory</h2>
         </div>
     </section>
 
-    <!-- Info Cards -->
     <section class="info-cards">
 
         <div class="info-box">
             <div class="box-title">Events</div>
-
             <div class="box-content">
                 <p>No upcoming events at the moment.</p>
             </div>
@@ -81,11 +69,8 @@
 
         <div class="info-box">
             <div class="box-title">Current Weather</div>
-
             <div class="box-content weather-content">
-
                 <div class="weather-icon">⛅</div>
-
                 <div class="weather-details">
                     <p>75°F - Partly Cloudy</p>
                     <p>High: 85° | Low: 52°</p>
@@ -93,13 +78,11 @@
                     <p>Sunrise: 7:30 AM</p>
                     <p>Sunset: 9:59 PM</p>
                 </div>
-
             </div>
         </div>
 
         <div class="info-box">
             <div class="box-title">Weather Forecast</div>
-
             <div class="box-content forecast-content">
                 <p>Today: 90°F</p>
                 <p>Wednesday: 89°F</p>
@@ -109,24 +92,16 @@
 
     </section>
 
-    <!-- View Toggle -->
     <div class="view-toggle">
 
-        <button type="button" id="gridBtn">
-            Grid View
-        </button>
-
-        <button type="button" id="listBtn">
-            List View
-        </button>
+        <button type="button" id="gridBtn">Grid View</button>
+        <button type="button" id="listBtn">List View</button>
 
     </div>
 
     <main>
 
-        <h2 class="directory-heading">
-            Business Members
-        </h2>
+        <h2 class="directory-heading">Business Members</h2>
 
         <section id="members-container" class="grid"></section>
 
@@ -146,15 +121,15 @@
             <div class="footer-center">
 
                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/youtube.png" alt="YouTube">
+                    <img src="images/youtube.png" alt="YouTube" loading="lazy">
                 </a>
 
                 <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/x.png" alt="X / Twitter">
+                    <img src="images/x.png" alt="X / Twitter" loading="lazy">
                 </a>
 
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedin.png" alt="LinkedIn">
+                    <img src="images/linkedin.png" alt="LinkedIn" loading="lazy">
                 </a>
 
             </div>
@@ -164,10 +139,7 @@
                 <p>Saleh Ntege</p>
                 <p>© 2026 Kampala Chamber of Commerce</p>
 
-                <p>
-                    Last Modified:
-                    <span id="lastModified"></span>
-                </p>
+                <p>Last Modified: <span id="lastModified"></span></p>
             </div>
 
         </div>

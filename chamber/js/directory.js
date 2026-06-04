@@ -116,6 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const rawLastModified = document.lastModified;
 
     const lastModified = document.querySelector("#lastModified");
+    
 
     if (rawLastModified) {
 

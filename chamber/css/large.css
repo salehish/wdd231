@@ -182,10 +182,12 @@
 
 
 
-#spotlight-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+@media (min-width: 768px) {
+  #spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
 
 .spotlight-image {
@@ -253,4 +255,18 @@
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+}
+
+.join-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+
+
+.membership-cards {
+  position: sticky;
+  top: 1rem;
 }

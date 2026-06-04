@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Last Modified Footer
     document.querySelector("#lastModified").textContent =
         document.lastModified;
-
+      
     // Spotlight Members
     const spotlightContainer = document.querySelector("#spotlight-container");
 

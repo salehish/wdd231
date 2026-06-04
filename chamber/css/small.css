@@ -343,6 +343,12 @@ dialog {
 /* Thank you page */
 .thankyou-page {
     padding: 2rem;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Footer */

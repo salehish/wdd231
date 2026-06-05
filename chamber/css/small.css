@@ -182,6 +182,14 @@ main {
     display: block;
 }
 
+.list .member-card img {
+    display: none;
+}
+
+.list .member-card {
+    text-align: left;
+}
+
 /* Member Cards */
 .member-card {
     background: white;

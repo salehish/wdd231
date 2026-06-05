@@ -4,7 +4,7 @@
         "address": "Plot 12, Kampala Road",
         "phone": "+256 700 000 111",
         "website": "https://example.com",
-        "image": "techhub.jpg",
+        "image": "techhub.webp",
         "description": "Forever tech hub fostering innovation and entrepreneurship in Kampala.",
         "membership": 3
     },
@@ -13,7 +13,7 @@
         "address": "Nakasero Market",
         "phone": "+256 700 000 222",
         "website": "https://example.com",
-        "image": "market.jpg",
+        "image": "market.webp",
         "description": "A vibrant market with a variety of goods and services.",
         "membership": 2
     },
@@ -22,7 +22,7 @@
         "address": "Plot 12, Nakasero Road, Kampala",
         "phone": "+256 700 111 222",
         "website": "https://kampalatechhub.com",
-        "image": "techhubb.jpg",
+        "image": "techhubb.webp",
         "membership": 3,
         "category": "Technology",
         "description": "Innovation center supporting startups and developers in Uganda."
@@ -32,7 +32,7 @@
         "address": "Jinja Road, Kampala",
         "phone": "+256 701 222 333",
         "website": "https://victoriabusiness.co.ug",
-        "image": "victoria.jpg",
+        "image": "victoria.webp",
         "membership": 2,
         "category": "Business Services",
         "description": "Office spaces and corporate support services."
@@ -42,7 +42,7 @@
         "address": "Owino Market, Kampala",
         "phone": "+256 702 333 444",
         "website": "https://niletraders.ug",
-        "image": "niletraders.jpg",
+        "image": "niletraders.webp",
         "membership": 1,
         "category": "Trade",
         "description": "Supports local traders and small-scale businesses."
@@ -52,7 +52,7 @@
         "address": "Bugolobi, Kampala",
         "phone": "+256 703 444 555",
         "website": "https://pearldigital.ug",
-        "image": "pearldigital.jpg",
+        "image": "pearldigital.webp",
         "membership": 3,
         "category": "Marketing",
         "description": "Digital marketing, branding, and web development services."
@@ -62,7 +62,7 @@
         "address": "Gayaza Road, Kampala",
         "phone": "+256 704 555 666",
         "website": "https://greenleafagro.ug",
-        "image": "greenleaf.jpg",
+        "image": "greenleaf.webp",
         "membership": 2,
         "category": "Agriculture",
         "description": "Suppliers of agricultural tools and farm inputs."
@@ -72,7 +72,7 @@
         "address": "Parliament Avenue, Kampala",
         "phone": "+256 705 666 777",
         "website": "https://kft.ug",
-        "image": "kft.jpg",
+        "image": "kft.webp",
         "membership": 3,
         "category": "Finance",
         "description": "Provides loans, savings, and investment services."
@@ -82,7 +82,7 @@
         "address": "Kololo Hill, Kampala",
         "phone": "+256 706 777 888",
         "website": "https://sunrisehospitality.ug",
-        "image": "sunrise.jpg",
+        "image": "sunrise.webp",
         "membership": 2,
         "category": "Hospitality",
         "description": "Hotels and event management services in Kampala."

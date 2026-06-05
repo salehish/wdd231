@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const rawLastModified = document.lastModified;
 
     const lastModified = document.querySelector("#lastModified");
-    
+
 
     if (rawLastModified) {
 
@@ -136,11 +136,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const navLinks = document.querySelector(".nav-links");
 
-    menuIcon.addEventListener("click", () => {
-
-        navLinks.classList.toggle("open");
-
-    });
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    }
 
     getMembers();
 

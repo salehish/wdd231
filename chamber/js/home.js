@@ -4,14 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.querySelector(".menu-icon");
     const navLinks = document.querySelector(".nav-links");
 
-    menuIcon.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
-    });
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    }
 
     // Last Modified Footer
     document.querySelector("#lastModified").textContent =
         document.lastModified;
-   
+
     // Spotlight Members
     const spotlightContainer = document.querySelector("#spotlight-container");
 

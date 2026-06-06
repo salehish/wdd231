@@ -1,0 +1,11 @@
+{
+        "current": {
+            "temp": 75,
+            "condition": "Partly Cloudy",
+            "high": 85,
+            "low": 52,
+            "humidity": 34,
+            "sunrise": "7:30 AM",
+            "sunset": "9:59 PM"
+        }
+    }

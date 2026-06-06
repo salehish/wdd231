@@ -112,6 +112,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
+// weather
+async function loadWeather() {
+    try {
+        const response = await fetch("data/weather.json");
+        if (!response.ok) throw new Error("Weather data not found");
+
+        const data = await response.json();
+        const current = data.current;
+
+        document.querySelector("#weather-icon").textContent = "⛅"; 
+        document.querySelector("#weather-temp").textContent = `${current.temp}°F - ${current.condition}`;
+        document.querySelector("#weather-highlow").textContent = `High: ${current.high}° | Low: ${current.low}°`;
+        document.querySelector("#weather-humidity").textContent = `Humidity: ${current.humidity}%`;
+        document.querySelector("#weather-sunrise").textContent = `Sunrise: ${current.sunrise}`;
+        document.querySelector("#weather-sunset").textContent = `Sunset: ${current.sunset}`;
+    } catch (err) {
+        console.error(err);
+        document.querySelector(".weather-details").innerHTML = "<p>Unable to load weather.</p>";
+    }
+}
+
+loadWeather();
+
     // Footer Date
     const rawLastModified = document.lastModified;
 
@@ -130,6 +153,8 @@ document.addEventListener("DOMContentLoaded", () => {
         lastModified.textContent =
             "Not available";
     }
+
+    document.querySelector("#year").textContent = new Date().getFullYear();
 
     // Mobile Navigation
     const menuIcon = document.querySelector(".menu-icon");

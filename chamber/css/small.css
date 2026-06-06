@@ -106,6 +106,13 @@ nav {
     display: block;
 }
 
+.hero-text {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-shadow: 0 0 5px #000;
+}
+
 /* Main */
 main {
     padding: 1rem;
@@ -179,11 +186,14 @@ main {
 }
 
 .list .member-image {
-    display: block;
+    display: none;
 }
 
 
 .list .member-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
     text-align: left;
 }
 
@@ -220,10 +230,21 @@ main {
     transform: translateY(10px);
 }
 
-.membership-card:nth-child(1) { animation-delay: 0.1s; }
-.membership-card:nth-child(2) { animation-delay: 0.2s; }
-.membership-card:nth-child(3) { animation-delay: 0.3s; }
-.membership-card:nth-child(4) { animation-delay: 0.4s; }
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
 
 @keyframes fadeIn {
     to {

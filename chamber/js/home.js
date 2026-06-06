@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#lastModified").textContent =
         document.lastModified;
 
+    document.querySelector("#year").textContent = new Date().getFullYear();
+
     // Spotlight Members
     const spotlightContainer = document.querySelector("#spotlight-container");
 
@@ -98,48 +100,48 @@ document.addEventListener("DOMContentLoaded", () => {
     const city = "Kampala";
 
     const url =
-    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
 
     async function getWeather() {
-    try {
-        const response = await fetch(url);
+        try {
+            const response = await fetch(url);
 
-        if (!response.ok) {
-            throw new Error("Weather data not found");
-        }
+            if (!response.ok) {
+                throw new Error("Weather data not found");
+            }
 
-        const data = await response.json();
+            const data = await response.json();
 
-        // Current weather (first forecast entry)
-        const current = data.list[0];
+            // Current weather (first forecast entry)
+            const current = data.list[0];
 
-        document.querySelector("#current-temp").textContent =
-            `Temperature: ${current.main.temp}°C`;
+            document.querySelector("#current-temp").textContent =
+                `Temperature: ${current.main.temp}°C`;
 
-        document.querySelector("#weather-desc").textContent =
-            current.weather[0].description;
+            document.querySelector("#weather-desc").textContent =
+                current.weather[0].description;
 
-        // 3-day FORECAST (every 8th entry = 24 hours)
-        let forecastHTML = "";
+            // 3-day FORECAST (every 8th entry = 24 hours)
+            let forecastHTML = "";
 
-        for (let i = 8; i <= 24; i += 8) {
-            const day = data.list[i];
+            for (let i = 8; i <= 24; i += 8) {
+                const day = data.list[i];
 
-            const date = new Date(day.dt_txt).toLocaleDateString("en-US", {
-                weekday: "short"
-            });
+                const date = new Date(day.dt_txt).toLocaleDateString("en-US", {
+                    weekday: "short"
+                });
 
-            forecastHTML += `
+                forecastHTML += `
                 <p>${date}: ${day.main.temp}°C</p>
             `;
+            }
+
+            document.querySelector("#forecast").innerHTML = forecastHTML;
+
+        } catch (error) {
+            console.error("Weather error:", error);
         }
-
-        document.querySelector("#forecast").innerHTML = forecastHTML;
-
-    } catch (error) {
-        console.error("Weather error:", error);
     }
-}
 
     getWeather();
 

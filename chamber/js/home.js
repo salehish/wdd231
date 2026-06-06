@@ -98,35 +98,48 @@ document.addEventListener("DOMContentLoaded", () => {
     const city = "Kampala";
 
     const url =
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
 
     async function getWeather() {
+    try {
+        const response = await fetch(url);
 
-        try {
-
-            const response = await fetch(url);
-
-            if (!response.ok) {
-                throw new Error("Weather data not found");
-            }
-
-            const data = await response.json();
-
-            document.querySelector("#current-temp").textContent =
-                `Temperature: ${data.main.temp}°C`;
-
-            document.querySelector("#weather-desc").textContent =
-                data.weather[0].description;
-
-            document.querySelector("#forecast").textContent =
-                `Humidity: ${data.main.humidity}%`;
-
-        } catch (error) {
-
-            console.error("Weather error:", error);
-
+        if (!response.ok) {
+            throw new Error("Weather data not found");
         }
+
+        const data = await response.json();
+
+        // Current weather (first forecast entry)
+        const current = data.list[0];
+
+        document.querySelector("#current-temp").textContent =
+            `Temperature: ${current.main.temp}°C`;
+
+        document.querySelector("#weather-desc").textContent =
+            current.weather[0].description;
+
+        // 3-day FORECAST (every 8th entry = 24 hours)
+        let forecastHTML = "";
+
+        for (let i = 8; i <= 24; i += 8) {
+            const day = data.list[i];
+
+            const date = new Date(day.dt_txt).toLocaleDateString("en-US", {
+                weekday: "short"
+            });
+
+            forecastHTML += `
+                <p>${date}: ${day.main.temp}°C</p>
+            `;
+        }
+
+        document.querySelector("#forecast").innerHTML = forecastHTML;
+
+    } catch (error) {
+        console.error("Weather error:", error);
     }
+}
 
     getWeather();
 

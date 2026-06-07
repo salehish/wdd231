@@ -104,6 +104,8 @@ nav {
     width: 100%;
     height: auto;
     display: block;
+    max-height: 500px;
+    object-fit: cover;
 }
 
 .hero-text {
@@ -288,6 +290,19 @@ main {
 
 .weather-icon {
     font-size: 4rem;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    text-align: center;
+    padding: 0.5rem;
+    background: #f0f0f0;
+    border-radius: 8px;
 }
 
 /* Member layout */

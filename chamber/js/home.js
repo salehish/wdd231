@@ -6,8 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (menuIcon && navLinks) {
         menuIcon.addEventListener("click", () => {
-            navLinks.classList.toggle("open");
-        });
+    navLinks.classList.toggle("open");
+
+    const expanded = menuIcon.getAttribute("aria-expanded") === "true";
+    menuIcon.setAttribute("aria-expanded", !expanded);
+});
     }
 
     // Last Modified Footer
@@ -17,8 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#year").textContent = new Date().getFullYear();
 
     // Spotlight Members
-    const spotlightContainer = document.querySelector("#spotlight-container");
-
     async function getSpotlights() {
 
         try {
@@ -77,8 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="spotlight-details">
                         <p>${member.address}</p>
                         <p>${member.phone}</p>
-                        <p>${member.membership} Member</p>
-
+                        <p>
+                        ${member.membership === 3 ? "Gold Member" :
+                           member.membership === 2 ? "Silver Member" :
+                        "Member"}
+                        </p>
                         <a href="${member.website}" target="_blank">
                             Visit Website
                         </a>
@@ -91,6 +95,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
     }
+
+    async function getSpotlights() {
+    const response = await fetch("members.json");
+    const data = await response.json();
+    const qualifiedMembers = data.members.filter(member => member.membership === 3 || member.membership === 2);
+    const shuffled = [...qualifiedMembers].sort(() => Math.random() - 0.5);
+    const spotlightsToShow = shuffled.slice(0, 3);
+    displaySpotlights(spotlightsToShow);
+}
 
     getSpotlights();
 
@@ -122,19 +135,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 current.weather[0].description;
 
             // 3-day FORECAST (every 8th entry = 24 hours)
-            let forecastHTML = "";
+           let forecastHTML = "<div class='forecast-grid'>";
 
-            for (let i = 8; i <= 24; i += 8) {
-                const day = data.list[i];
+           for (let i = 8; i <= 24; i += 8) {
+            const day = data.list[i];
 
-                const date = new Date(day.dt_txt).toLocaleDateString("en-US", {
-                    weekday: "short"
-                });
+            const date = new Date(day.dt_txt);
 
-                forecastHTML += `
-                <p>${date}: ${day.main.temp}°C</p>
+            const weekday = date.toLocaleDateString("en-US", { weekday: "short" });
+               
+            forecastHTML += `
+                <div class="forecast-day">
+                 <strong>${weekday}</strong>
+                 <p>${Math.round(day.main.temp)}°C</p>
+                 <p>${day.weather[0].description}</p>
+                 </div>
             `;
             }
+
+                forecastHTML += "</div>";
 
             document.querySelector("#forecast").innerHTML = forecastHTML;
 

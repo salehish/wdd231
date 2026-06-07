@@ -149,6 +149,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .member-name {
   text-align: center;
   font-weight: bold;

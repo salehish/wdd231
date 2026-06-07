@@ -1,0 +1,91 @@
+[
+    {
+        "name": "Jinja Tech",
+        "address": "Plot 12, Kampala Road",
+        "phone": "+256 700 000 111",
+        "website": "https://example.com",
+        "image": "techhub.webp",
+        "description": "Forever tech hub fostering innovation and entrepreneurship in Kampala.",
+        "membership": 3
+    },
+    {
+        "name": "City Market Traders",
+        "address": "Nakasero Market",
+        "phone": "+256 700 000 222",
+        "website": "https://example.com",
+        "image": "market.webp",
+        "description": "A vibrant market with a variety of goods and services.",
+        "membership": 2
+    },
+    {
+        "name": "Kampala Tech Hub",
+        "address": "Plot 12, Nakasero Road, Kampala",
+        "phone": "+256 700 111 222",
+        "website": "https://kampalatechhub.com",
+        "image": "techhubb.webp",
+        "membership": 3,
+        "category": "Technology",
+        "description": "Innovation center supporting startups and developers in Uganda."
+    },
+    {
+        "name": "Victoria Business Center",
+        "address": "Jinja Road, Kampala",
+        "phone": "+256 701 222 333",
+        "website": "https://victoriabusiness.co.ug",
+        "image": "victoria.webp",
+        "membership": 2,
+        "category": "Business Services",
+        "description": "Office spaces and corporate support services."
+    },
+    {
+        "name": "Nile Traders Association",
+        "address": "Owino Market, Kampala",
+        "phone": "+256 702 333 444",
+        "website": "https://niletraders.ug",
+        "image": "niletraders.webp",
+        "membership": 1,
+        "category": "Trade",
+        "description": "Supports local traders and small-scale businesses."
+    },
+    {
+        "name": "Pearl Digital Agency",
+        "address": "Bugolobi, Kampala",
+        "phone": "+256 703 444 555",
+        "website": "https://pearldigital.ug",
+        "image": "pearldigital.webp",
+        "membership": 3,
+        "category": "Marketing",
+        "description": "Digital marketing, branding, and web development services."
+    },
+    {
+        "name": "GreenLeaf Agro Suppliers",
+        "address": "Gayaza Road, Kampala",
+        "phone": "+256 704 555 666",
+        "website": "https://greenleafagro.ug",
+        "image": "greenleaf.webp",
+        "membership": 2,
+        "category": "Agriculture",
+        "description": "Suppliers of agricultural tools and farm inputs."
+    },
+    {
+        "name": "Kampala Financial Trust",
+        "address": "Parliament Avenue, Kampala",
+        "phone": "+256 705 666 777",
+        "website": "https://kft.ug",
+        "image": "kft.webp",
+        "membership": 3,
+        "category": "Finance",
+        "description": "Provides loans, savings, and investment services."
+    },
+    {
+        "name": "Sunrise Hospitality Group",
+        "address": "Kololo Hill, Kampala",
+        "phone": "+256 706 777 888",
+        "website": "https://sunrisehospitality.ug",
+        "image": "sunrise.webp",
+        "membership": 2,
+        "category": "Hospitality",
+        "description": "Hotels and event management services in Kampala."
+    }
+]
+

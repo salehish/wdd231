@@ -47,46 +47,77 @@
 
 <form method="get" action="thankyou.html">
 
-    <label for="fname">First Name</label>
-    <input id="fname" type="text" name="fname" required>
+    <label>
+  First Name
+  <input type="text" id="fname" name="fname"
+         title="Enter your first name"
+         autocomplete="given-name"
+         required>
+</label>
 
-    <label for="lname">Last Name</label>
-    <input id="lname" type="text" name="lname" required>
+    <label>
+  Last Name
+  <input type="text" id="lname" name="lname"
+         title="Enter your last name"
+         autocomplete="family-name"
+         required>
+</label>
 
-    <label for="orgtitle">Organization Title</label>
-    <input id="orgtitle"
-           type="text"
-           name="orgtitle"
-           title="At least 7 characters using letters, spaces, and hyphens only"
-           autocomplete="organization-title"
-           pattern="^[A-Za-z\s-]{7,}$"
-           required>
+<label>
+  Organization Title
+  <input type="text" id="orgtitle" name="orgtitle"
+         title="At least 7 characters using letters, spaces, and hyphens only"
+         autocomplete="organization-title"
+         pattern="^[A-Za-z\s-]{7,}$">
+</label>
+<label>
+  Email
+  <input id="email"
+         type="email"
+         name="email"
+         title="Enter your email address"
+         autocomplete="email"
+         placeholder="example@email.com"
+         required>
+</label>
 
-    <label for="email">Email</label>
-    <input id="email"
-       type="email"
-       name="email"
-       placeholder="example@email.com"
-       required>
+    <label>
+  Mobile Phone
+  <input type="tel" id="phone" name="phone"
+         title="Enter your mobile phone number"
+         autocomplete="tel"
+         required>
+</label>
 
-    <label for="phone">Mobile Phone</label>
-    <input id="phone" type="tel" name="phone" required>
+    <label>
+        Organization Name
+        <input id="organization" type="text" name="organization"
+         title="Enter your organization name"
+         autocomplete="organization"
+         required>
+</label>
 
-    <label for="organization">Organization Name</label>
-    <input id="organization" type="text" name="organization" required>
-
-    <label for="membership">Membership Level</label>
-    <select id="membership" name="membership" required>
+ <label>
+    Membership Level
+    <select id="membership"
+        name="membership"
+        title="Select a membership level"
+        required>
         <option value="">Select Membership</option>
         <option value="np">NP Membership</option>
         <option value="bronze">Bronze Membership</option>
         <option value="silver">Silver Membership</option>
         <option value="gold">Gold Membership</option>
     </select>
+</label>
 
-    <label for="description">Organization Description</label>
-    <textarea id="description" name="description"></textarea>
-
+<label>
+    Organization Description
+    <textarea
+        id="description"
+        name="description"
+        title="Describe your organization"></textarea>
+</label>
     <input type="hidden" id="timestamp" name="timestamp">
 
     <input type="submit" value="Submit Application">
@@ -125,25 +156,25 @@
  <dialog id="npModal" aria-labelledby="npTitle">
     <h3 id="npTitle">NP Membership</h3>
     <p>No fee. Access to chamber events.</p>
-    <button onclick="npModal.close()">Close</button>
+    <button type="button" onclick="npModal.close()">Close</button>
 </dialog>
 
 <dialog id="bronzeModal" aria-labelledby="bronzeTitle">
     <h3 id="bronzeTitle">Bronze Membership</h3>
     <p>Training workshops and networking opportunities.</p>
-    <button onclick="bronzeModal.close()">Close</button>
+    <button type="button" onclick="bronzeModal.close()">Close</button>
 </dialog>
 
 <dialog id="silverModal" aria-labelledby="silverTitle">
     <h3 id="silverTitle">Silver Membership</h3>
     <p>Everything in Bronze plus event discounts.</p>
-    <button onclick="silverModal.close()">Close</button>
+    <button type="button" onclick="silverModal.close()">Close</button>
 </dialog>
 
 <dialog id="goldModal" aria-labelledby="goldTitle">
     <h3 id="goldTitle">Gold Membership</h3>
     <p>Premium advertising and homepage spotlight features.</p>
-    <button onclick="goldModal.close()">Close</button>
+    <button type="button" onclick="goldModal.close()">Close</button>
 </dialog>
 
 <footer>

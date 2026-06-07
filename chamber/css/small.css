@@ -230,6 +230,7 @@ main {
     animation: fadeIn 0.8s ease forwards;
     opacity: 0;
     transform: translateY(10px);
+    position: static;
 }
 
 .membership-card:nth-child(1) {
@@ -409,6 +410,7 @@ dialog {
     align-items: center;
     text-align: center;
 }
+
 
 /* Footer */
 footer {

@@ -150,9 +150,9 @@
 }
 
 @media (min-width: 1024px) {
-    .forecast-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .forecast-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .member-name {
@@ -265,11 +265,11 @@
 }
 
 .join-container {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-      align-items: start;
-    }
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
 
 
 

@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F8F8;
+    color: #0e0e0e;
+    margin: 0;
+    padding: 20px;
+}
+
+header,
+footer {
+    background-color: #00162c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #037ef8;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+}

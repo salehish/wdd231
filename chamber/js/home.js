@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (menuIcon && navLinks) {
         menuIcon.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
+            navLinks.classList.toggle("open");
 
-    const expanded = menuIcon.getAttribute("aria-expanded") === "true";
-    menuIcon.setAttribute("aria-expanded", !expanded);
-});
+            const expanded = menuIcon.getAttribute("aria-expanded") === "true";
+            menuIcon.setAttribute("aria-expanded", !expanded);
+        });
     }
 
     // Last Modified Footer
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#year").textContent = new Date().getFullYear();
 
     // Spotlight Members
+    const spotlightContainer = document.querySelector("#spotlight-container");
+
     async function getSpotlights() {
-
         try {
-
             const response = await fetch("data/members.json");
 
             if (!response.ok) {
@@ -32,78 +32,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const members = await response.json();
 
-            // Gold and Silver members only
             const qualifiedMembers = members.filter(member =>
-                member.membership === 3 ||
-                member.membership === 2
+                member.membership === 3 || member.membership === 2
             );
 
-            // Shuffle members randomly
-            const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
+            const shuffled = [...qualifiedMembers]
+                .sort(() => Math.random() - 0.5);
 
-            // Select 3 members
-            const selected = shuffled.slice(0, 3);
+            const spotlightsToShow = shuffled.slice(0, 3);
 
-            displaySpotlights(selected);
+            displaySpotlights(spotlightsToShow);
 
         } catch (error) {
-
             console.error("Error loading spotlight members:", error);
-
         }
     }
 
-    // Display Spotlight Cards
     function displaySpotlights(members) {
-
         spotlightContainer.innerHTML = "";
 
         members.forEach(member => {
-
             const card = document.createElement("div");
 
             card.classList.add("spotlight-card");
 
             card.innerHTML = `
-                <h3 class="spotlight-name">${member.name}</h3>
+            <h3 class="spotlight-name">${member.name}</h3>
+            <hr>
+            <div class="spotlight-content">
+                <img src="images/${member.image}"
+                     alt="${member.name}"
+                     class="spotlight-image">
 
-                <hr>
+                <div class="spotlight-details">
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <p>${member.membership === 3
+                    ? "Gold Member"
+                    : "Silver Member"
+                }</p>
 
-                <div class="spotlight-content">
-
-                    <img src="images/${member.image}" 
-                         alt="${member.name}" 
-                         class="spotlight-image">
-
-                    <div class="spotlight-details">
-                        <p>${member.address}</p>
-                        <p>${member.phone}</p>
-                        <p>
-                        ${member.membership === 3 ? "Gold Member" :
-                           member.membership === 2 ? "Silver Member" :
-                        "Member"}
-                        </p>
-                        <a href="${member.website}" target="_blank">
-                            Visit Website
-                        </a>
-                    </div>
-
+                    <a href="${member.website}" target="_blank">
+                        Visit Website
+                    </a>
                 </div>
-            `;
+            </div>
+        `;
 
             spotlightContainer.appendChild(card);
-
         });
     }
-
-    async function getSpotlights() {
-    const response = await fetch("members.json");
-    const data = await response.json();
-    const qualifiedMembers = data.members.filter(member => member.membership === 3 || member.membership === 2);
-    const shuffled = [...qualifiedMembers].sort(() => Math.random() - 0.5);
-    const spotlightsToShow = shuffled.slice(0, 3);
-    displaySpotlights(spotlightsToShow);
-}
 
     getSpotlights();
 
@@ -135,16 +113,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 current.weather[0].description;
 
             // 3-day FORECAST (every 8th entry = 24 hours)
-           let forecastHTML = "<div class='forecast-grid'>";
+            let forecastHTML = "<div class='forecast-grid'>";
 
-           for (let i = 8; i <= 24; i += 8) {
-            const day = data.list[i];
+            for (let i = 8; i <= 24; i += 8) {
+                const day = data.list[i];
 
-            const date = new Date(day.dt_txt);
+                const date = new Date(day.dt_txt);
 
-            const weekday = date.toLocaleDateString("en-US", { weekday: "short" });
-               
-            forecastHTML += `
+                const weekday = date.toLocaleDateString("en-US", { weekday: "short" });
+
+                forecastHTML += `
                 <div class="forecast-day">
                  <strong>${weekday}</strong>
                  <p>${Math.round(day.main.temp)}°C</p>
@@ -153,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             }
 
-                forecastHTML += "</div>";
+            forecastHTML += "</div>";
 
             document.querySelector("#forecast").innerHTML = forecastHTML;
 

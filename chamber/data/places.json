@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Uganda Museum",
+    "image": "images/museum.webp",
+    "address": "Kira Road, Kampala",
+    "description": "The oldest museum in Uganda showcasing cultural heritage."
+  },
+  {
+    "name": "Kasubi Tombs",
+    "image": "images/kasubi.webp",
+    "address": "Kasubi Hill, Kampala",
+    "description": "UNESCO World Heritage Site and burial grounds of Buganda kings."
+  },
+  {
+    "name": "Kololo LDS Church",
+    "image": "images/kololo.webp",
+    "address": "Kololo, Kampala",
+    "description": "A meetinghouse of The Church of Jesus Christ of Latter-day Saints serving multiple congregations in Kampala."
+  },
+  {
+    "name": "Kabaka's Palace",
+    "image": "images/palace.webp",
+    "address": "Mengo, Kampala",
+    "description": "Official residence of the Kabaka of Buganda."
+  },
+  {
+    "name": "Ndere Cultural Centre",
+    "image": "images/ndere.webp",
+    "address": "Ntinda, Kampala",
+    "description": "A center showcasing Uganda's traditional culture."
+  },
+  {
+    "name": "Makerere University",
+    "image": "images/makerere.webp",
+    "address": "Makerere Hill, Kampala",
+    "description": "One of Africa's oldest universities."
+  },
+  {
+    "name": "Independence Monument",
+    "image": "images/monument.webp",
+    "address": "Speke Road, Kampala",
+    "description": "A monument celebrating Uganda's independence."
+  },
+  {
+    "name": "Gaddafi National Mosque",
+    "image": "images/mosque.webp",
+    "address": "Old Kampala",
+    "description": "One of the largest mosques in East Africa."
+  }
+]

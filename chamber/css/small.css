@@ -91,7 +91,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    background-color: #3434ff;
+    background-color: #1a4fff;
 }
 
 .nav-links li a.active {
@@ -295,7 +295,8 @@ main {
 
 .forecast-grid {
     display: grid;
-    grid-template-columns: 1fr; /* 1 column on small screens */
+    grid-template-columns: 1fr;
+    /* 1 column on small screens */
     gap: 0.5rem;
 }
 
@@ -409,6 +410,87 @@ dialog {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+
+#places-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+}
+
+#places-container article {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+
+#places-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#places-container button {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: .75rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card1 {
+    grid-area: one;
+}
+
+.card2 {
+    grid-area: two;
+}
+
+.card3 {
+    grid-area: three;
+}
+
+.card4 {
+    grid-area: four;
+}
+
+.card5 {
+    grid-area: five;
+}
+
+.card6 {
+    grid-area: six;
+}
+
+.card7 {
+    grid-area: seven;
+}
+
+.card8 {
+    grid-area: eight;
+}
+
+.navigation .navigation.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #02013d;
+    width: 220px;
+    padding: 1rem;
+    z-index: 1000;
 }
 
 

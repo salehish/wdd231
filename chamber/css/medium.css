@@ -1,0 +1,21 @@
+@media screen and (min-width: 641px) {
+    #places-container {
+        grid-template-areas:
+            "one one two"
+            "three four two"
+            "five six seven"
+            "eight eight seven";
+    }
+}
+
+@media screen and (min-width: 641px) {
+
+    #places-container img {
+        transition: transform .3s ease;
+    }
+
+    #places-container img:hover {
+        transform: scale(1.05);
+    }
+
+}

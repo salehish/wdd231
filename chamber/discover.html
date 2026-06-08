@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Kampala and explore attractions, landmarks, and places of interest.">
+    <meta name="author" content="Saleh Ntege">
+    <title>Discover Kampala | Kampala Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script defer src="js/navigation.js"></script>
+    <script type="module" src="js/discover.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Kampala Chamber Logo" width="80" height="80">
+            <div>
+                <h1>Kampala Chamber</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <nav>
+
+            <div class="theme-toggle"></div>
+
+            <button class="menu-icon" aria-label="Open navigation menu">&#9776;</button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="discover-main">
+
+        <h1>Discover Kampala</h1>
+
+        <section id="visitor-message" aria-live="polite"></section>
+
+        <section class="discover-intro">
+            <h2>Explore Uganda's Vibrant Capital City</h2>
+            <p>
+                Kampala is Uganda's largest city and commercial hub. It is known
+                for its cultural heritage, growing business community, historical
+                landmarks, and beautiful attractions. Discover some of the most
+                popular places that make Kampala an exciting destination for
+                visitors and investors alike.
+            </p>
+        </section>
+
+        <section id="places-container" class="places-grid">
+            <!-- Cards will be created dynamically by discover.js -->
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="footer-left">
+                <p>Kampala Chamber of Commerce</p>
+                <p>Plot 13, Kampala Road, Kampala, Uganda</p>
+                <p>Email: info@kampalachamber.ug</p>
+                <p>Phone: +256 701 000 000</p>
+            </div>
+
+            <div class="footer-center">
+
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/youtube.webp" alt="YouTube" loading="lazy">
+                </a>
+
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/x.webp" alt="X / Twitter" loading="lazy">
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.webp" alt="LinkedIn" loading="lazy">
+                </a>
+
+            </div>
+
+            <div class="footer-right">
+                <p>&copy; <span id="year"></span> Kampala Chamber of Commerce | Saleh Ntege | WDD231</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

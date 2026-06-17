@@ -279,9 +279,14 @@
 }
 
 @media screen and (min-width: 1025px) {
-    #places-container {
-        grid-template-areas:
-            "one two three four"
-            "five six seven eight";
-    }
+
+  #places-container {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+      "one one two three"
+      "four five six six"
+      "seven eight eight eight";
+  }
 }

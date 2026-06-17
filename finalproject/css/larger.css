@@ -1,0 +1,95 @@
+/*LARGE SCREEN STYLES */
+
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* Hide hamburger menu */
+    #menu {
+        display: none;
+    }
+
+    /* Always show navigation */
+    #navigation {
+        display: block;
+    }
+
+    /* Horizontal navigation */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* Two-column grid */
+    #players-container,
+    #favorites-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 768px) {
+        .featured-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* Wider modal */
+    dialog {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Header layout */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 0.75rem 1rem;
+    }
+
+    /* Three-column grid */
+    #players-container,
+    #favorites-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Larger cards */
+    .player-card {
+        padding: 1.25rem;
+    }
+
+    /* Desktop hover effect */
+    .player-card:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Larger content sections */
+    .favorites-intro,
+    .thanks-section,
+    .attributions {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* Four-column layout on very large screens */
+    #players-container,
+    #favorites-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

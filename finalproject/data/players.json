@@ -1,0 +1,167 @@
+[
+    {
+        "id": 9,
+        "name": "Lionel Messi",
+        "club": "Inter Miami",
+        "position": "Forward",
+        "nationality": "Argentina",
+        "age": 37,
+        "goals": 20,
+        "assists": 15,
+        "image": "images/messi.webp"
+    },
+    {
+        "id": 10,
+        "name": "Cristiano Ronaldo",
+        "club": "Al Nassr",
+        "position": "Forward",
+        "nationality": "Portugal",
+        "age": 39,
+        "goals": 30,
+        "assists": 5,
+        "image": "images/ronaldo.webp"
+    },
+    {
+        "id": 2,
+        "name": "Kylian Mbappé",
+        "club": "Real Madrid",
+        "position": "Forward",
+        "nationality": "France",
+        "age": 26,
+        "goals": 32,
+        "assists": 12,
+        "image": "images/mbappe.webp"
+    },
+    {
+        "id": 1,
+        "name": "Erling Haaland",
+        "club": "Manchester City",
+        "position": "Striker",
+        "nationality": "Norway",
+        "age": 25,
+        "goals": 36,
+        "assists": 8,
+        "image": "images/haaland.webp"
+    },
+    {
+        "id": 3,
+        "name": "Reece James",
+        "club": "Chelsea",
+        "position": "Defender",
+        "nationality": "England",
+        "age": 26,
+        "goals": 10,
+        "assists": 21,
+        "image": "images/james.webp"
+    },
+    {
+        "id": 4,
+        "name": "Vinícius Jr",
+        "club": "Real Madrid",
+        "position": "Winger",
+        "nationality": "Brazil",
+        "age": 25,
+        "goals": 18,
+        "assists": 11,
+        "image": "images/vinicius.webp"
+    },
+    {
+        "id": 5,
+        "name": "Kevin De Bruyne",
+        "club": "Manchester City",
+        "position": "Midfielder",
+        "nationality": "Belgium",
+        "age": 33,
+        "goals": 9,
+        "assists": 18,
+        "image": "images/debruyne.webp"
+    },
+    {
+        "id": 6,
+        "name": "Mohamed Salah",
+        "club": "Liverpool",
+        "position": "Forward",
+        "nationality": "Egypt",
+        "age": 32,
+        "goals": 24,
+        "assists": 10,
+        "image": "images/salah.webp"
+    },
+    {
+        "id": 7,
+        "name": "Bukayo Saka",
+        "club": "Arsenal",
+        "position": "Winger",
+        "nationality": "England",
+        "age": 23,
+        "goals": 16,
+        "assists": 9,
+        "image": "images/saka.webp"
+    },
+    {
+        "id": 8,
+        "name": "Harry Kane",
+        "club": "Bayern Munich",
+        "position": "Striker",
+        "nationality": "England",
+        "age": 31,
+        "goals": 28,
+        "assists": 7,
+        "image": "images/kane.webp"
+    },
+    {
+        "id": 11,
+        "name": "Rodri",
+        "club": "Manchester City",
+        "position": "Midfielder",
+        "nationality": "Spain",
+        "age": 28,
+        "goals": 6,
+        "assists": 8,
+        "image": "images/rodri.webp"
+    },
+    {
+        "id": 12,
+        "name": "Cole Palmer",
+        "club": "Chelsea",
+        "position": "Midfielder",
+        "nationality": "England",
+        "age": 24,
+        "goals": 47,
+        "assists": 21,
+        "image": "images/palmer.webp"
+    },
+    {
+        "id": 13,
+        "name": "Virgil van Dijk",
+        "club": "Liverpool",
+        "position": "Defender",
+        "nationality": "Netherlands",
+        "age": 33,
+        "goals": 5,
+        "assists": 2,
+        "image": "images/vvd.webp"
+    },
+    {
+        "id": 14,
+        "name": "Luka Modrić",
+        "club": "Real Madrid",
+        "position": "Midfielder",
+        "nationality": "Croatia",
+        "age": 38,
+        "goals": 6,
+        "assists": 9,
+        "image": "images/modric.webp"
+    },
+    {
+        "id": 15,
+        "name": "Enzo Fernández",
+        "club": "Chelsea",
+        "position": "Midfielder",
+        "nationality": "Argentina",
+        "age": 25,
+        "goals": 10,
+        "assists": 4,
+        "image": "images/fernandez.webp"
+    }
+]

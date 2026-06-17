@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Football Players Directory | Home</title>
+
+    <meta name="description"
+        content="Explore professional football players from clubs and countries around the world and save your favorite players.">
+
+    <meta name="author" content="Saleh Ntege">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Football Players Directory">
+    <meta property="og:description"
+        content="Discover football player profiles, clubs, statistics, and save your favorites.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/larger.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Football Players Directory</h1>
+
+        <button id="menu" aria-expanded="false">☰</button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Welcome to Football Players Directory</h2>
+
+            <p>
+                Explore professional football players from different clubs and countries around the world.
+                Browse player profiles, discover statistics, and save your favorite players.
+            </p>
+
+            <a href="players.html" class="btn">View Players</a>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Players</h2>
+
+            <div class="featured-grid">
+
+                <div class="featured-card">
+                    <img src="images/messi.webp" alt="Lionel Messi">
+                    <h3>Lionel Messi</h3>
+                    <p>Inter Miami</p>
+                </div>
+
+                <div class="featured-card">
+                    <img src="images/ronaldo.webp" alt="Cristiano Ronaldo">
+                    <h3>Cristiano Ronaldo</h3>
+                    <p>Al Nassr</p>
+                </div>
+
+                <div class="featured-card">
+                    <img src="images/mbappe.webp" alt="Kylian Mbappé">
+                    <h3>Kylian Mbappé</h3>
+                    <p>Real Madrid</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="recommend-section">
+            <h2>Recommend a Player</h2>
+            <p class="recommend-text">
+                Know a football player we should add to our directory?
+                Send us your recommendation below.
+            </p>
+
+            <form action="thankyou.html" method="GET">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="player">Player Recommendation</label>
+                <input type="text" id="player" name="player" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit">⚽ Submit Recommendation</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Football Players Directory | Saleh Ntege</p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+        <p>
+            <a href="https://www.youtube.com/watch?v=0fcwmBQloas&t=15s" target="_blank">Project Video</a>
+        </p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

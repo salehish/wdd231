@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorites | Football Players Directory</title>
+    <meta name="description" content="View your saved favorite football players from the Football Players Directory.">
+    <meta name="author" content="Saleh Ntege">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Football Players Directory - Favorites">
+    <meta property="og:description" content="Your saved football players list.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:image:alt" content="Football Players Directory Logo">
+    <meta property="og:url" content="https://salehish.github.io/wdd231/finalproject/favorites.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/larger.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Football Players Directory</h1>
+
+        <button id="menu" aria-label="Open Navigation Menu">☰</button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="favorites.html" class="active">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="favorites-intro">
+            <h2>Favorite Players</h2>
+            <p>Your saved football players will appear below.</p>
+        </section>
+
+        <!-- REQUIRED: dynamic content -->
+        <section id="favorites-container"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Football Players Directory | Saleh Ntege</p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+        <p>
+            <a href="https://www.youtube.com/watch?v=0fcwmBQloas&t=15s" target="_blank">Project Video</a>
+        </p>
+    </footer>
+
+    <!-- REQUIRED JS MODULE -->
+    <script type="module" src="js/favorites.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/favorites.js"></script>
+
+</body>
+
+</html>
